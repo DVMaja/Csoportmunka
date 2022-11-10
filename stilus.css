@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*Az elem szélessége: width + paddign + border*/
+}
+
+main{
+    display: grid;    
+    gap: 10px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+                            "h h "                        
+                            "n a"                            
+                            "f f";
+}
+
+header{
+    grid-area: h;
+}
+nav{
+    grid-area: n;    
+}
+article{
+    grid-area: a;
+}
+footer{
+    grid-area: f;
+}
